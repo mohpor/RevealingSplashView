@@ -55,7 +55,7 @@ public extension SplashAnimatable where Self: UIView {
         if let imageView = self.imageView {
             
             //Define the shink and grow duration based on the duration parameter
-            let shrinkDuration: TimeInterval = duration * 0.0
+            let shrinkDuration: TimeInterval = duration * 0.3
             
             //Plays the shrink animation
             UIView.animate(withDuration: shrinkDuration, delay: delay, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions(), animations: {
