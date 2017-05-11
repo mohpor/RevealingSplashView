@@ -55,14 +55,14 @@ public extension SplashAnimatable where Self: UIView {
         if let imageView = self.imageView {
             
             //Define the shink and grow duration based on the duration parameter
-            let shrinkDuration: TimeInterval = duration * 0.3
+            let shrinkDuration: TimeInterval = duration * 0.0
             
             //Plays the shrink animation
-            UIView.animate(withDuration: shrinkDuration, delay: delay, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions(), animations: {
+            UIView.animate(withDuration: shrinkDuration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions(), animations: {
                 //Shrinks the image
-                let scaleTransform: CGAffineTransform = CGAffineTransform(scaleX: 0.75,y: 0.75)
-                imageView.transform = scaleTransform
-                
+//                let scaleTransform: CGAffineTransform = CGAffineTransform(scaleX: 0.75,y: 0.75)
+//                imageView.transform = scaleTransform
+
                 //When animation completes, grow the image
                 }, completion: { finished in
                     
