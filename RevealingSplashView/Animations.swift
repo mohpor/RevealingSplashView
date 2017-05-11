@@ -58,7 +58,7 @@ public extension SplashAnimatable where Self: UIView {
             let shrinkDuration: TimeInterval = duration * 0.0
             
             //Plays the shrink animation
-            UIView.animate(withDuration: shrinkDuration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions(), animations: {
+            UIView.animate(withDuration: shrinkDuration, delay: delay, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions(), animations: {
                 //Shrinks the image
 //                let scaleTransform: CGAffineTransform = CGAffineTransform(scaleX: 0.75,y: 0.75)
 //                imageView.transform = scaleTransform
